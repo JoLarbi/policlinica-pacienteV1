@@ -1,0 +1,257 @@
+body {
+	background: linear-gradient(141deg, rgba(255, 255, 255, 1) 0%, rgba(0, 224, 255, 1) 100%);
+	height: 100vh;
+	overflow-y: hidden;
+
+}
+
+@media (max-width: 992px) {
+	body {
+		overflow-y: auto;
+		position: relative;
+	}
+}
+
+h1 {
+	text-align: center;
+	color: deepskyblue;
+	margin-bottom: 30px;
+}
+
+/*-----------------------------------------#close-session-------------------------------------------------*/
+
+#close-session {
+	margin-top: 30px;
+}
+
+#close-session #content-btn {
+	width: fit-content;
+}
+
+/*-----------------------------------------#form-dates----------------------------------------------------*/
+
+#form-dates {
+	margin-top: 30px;
+}
+
+#form-dates #search-dates {
+	border-radius: 0;
+	background-color: deepskyblue;
+	border: none;
+}
+
+/*-----------------------------------------#dates----------------------------------------------------*/
+
+#dates {
+	margin-top: 30px;
+}
+
+#header-calendar {
+	background-color: deepskyblue;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#header-calendar span {
+	color: white;
+}
+
+#dates #header-calendar {
+	justify-content: space-between;
+}
+
+#dates #header-calendar>div {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+}
+
+/*-----------------------------------------#calendar-table----------------------------------------------------*/
+
+#calendar-table table {
+	margin-bottom: 0;
+}
+
+#calendar-table table tr td,
+#calendar-table table tr th {
+	text-align: center;
+}
+
+#calendar-table table tr td.om {
+	color: #c2c2c2;
+}
+
+#calendar-table table tr td.dt a {
+	width: 100% !important;
+	color: white;
+	text-decoration: none;
+	display: block;
+	background-color: deepskyblue;
+	border: solid 1px deepskyblue;
+}
+
+#calendar-table table tr td.dt a:hover {
+	color: deepskyblue;
+	background-color: white;
+}
+
+/*-----------------------------------------#hours----------------------------------------------------*/
+
+#hours {
+	background-color: white;
+}
+
+#hours #header-hours {
+	background-color: deepskyblue;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#hours #header-hours>div {
+	width: fit-content;
+}
+
+#hours #header-hours span {
+	color: white;
+}
+
+#hours #hour-list {
+	overflow-y: auto;
+}
+
+#hours .hour {
+	height: fit-content;
+	background-color: deepskyblue;
+	border: solid 1px deepskyblue;
+	width: fit-content;
+	margin: 5px;
+}
+
+#hours .hour:hover {
+	background-color: white;
+	color: deepskyblue;
+	border: solid 1px deepskyblue;
+}
+
+/*-----------------------------------------#Fondo blanco--------------------------------------------------*/
+#background-container {
+	width: 90%;
+	background-color: white;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding-bottom: 6em;
+}
+
+.selection {
+	padding: 1em;
+	box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+	-webkit-box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+	-moz-box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+	border-radius: 5px;
+	border-left: 1px solid rgba(99, 99, 99, 0.15);
+	border-top: 1px solid rgba(99, 99, 99, 0.15);
+}
+
+#calendar,
+#hours {
+	margin-top: 1em !important;
+	box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+	-webkit-box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+	-moz-box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+	border-radius: 5px;
+}
+
+hr {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 1em;
+	border-top: .5em solid deepskyblue;
+}
+
+#name-patient {
+	color: deepskyblue;
+}
+
+/***********************Modal crear cita***********************/
+
+.chooseDate {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dataTotalDate {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.modal-header {
+	background-color: deepskyblue;
+	color: white;
+}
+
+.chooseDate>*>hr {}
+
+
+.dataOfDate {
+	text-transform: lowercase;
+}
+
+.nameOfPaitent {
+	text-align: center;
+	font-weight: 900;
+}
+
+.saveDate {
+	background-color: deepskyblue;
+	border-color: deepskyblue;
+}
+
+.contentDataDate {
+	width: 70%;
+	margin: 0 auto;
+}
+
+
+.btnSize {
+	width: 20%;
+}
+
+/***********************Responsive***********************/
+
+@media(max-height:884px) {
+	body {
+		margin-top: 5em;
+	}
+}
+
+@media(max-width:1024px) {
+
+	.responsive-col {
+		flex-direction: column-reverse;
+	}
+
+	.responsiveIcons {
+		width: 100% !important;
+		justify-content: end !important;
+
+	}
+
+	.responsiveText {
+		width: 100% !important;
+	}
+}
+
+@media(max-width:420px) {
+	h4 {
+		font-size: 20px;
+	}
+
+}
+
+/* testing*/
+#specialty>option {
+	height: 1.5em;
+}
+

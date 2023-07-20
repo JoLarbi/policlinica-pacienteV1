@@ -1,0 +1,200 @@
+body {
+    background: linear-gradient(141deg, rgba(255, 255, 255, 1) 0%, rgba(0, 224, 255, 1) 100%);
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+@media (max-width: 992px) {
+    body {
+        overflow-y: auto;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: deepskyblue;
+    margin-bottom: 30px;
+}
+
+/*-----------------------------------------#close-session-------------------------------------------------*/
+
+#close-session {
+    margin-top: 30px;
+}
+
+#close-session #content-btn {
+    width: fit-content;
+}
+
+
+/*-----------------------------------------#Fondo blanco--------------------------------------------------*/
+#background-container {
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 6em;
+}
+
+.selection {
+    padding: 1em;
+    box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+    -webkit-box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+    -moz-box-shadow: 15px 15px 18px 0px rgba(99, 99, 99, 0.66);
+    border-radius: 5px;
+    border-left: 1px solid rgba(99, 99, 99, 0.15);
+    border-top: 1px solid rgba(99, 99, 99, 0.15);
+}
+
+hr {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-top: .5em solid deepskyblue;
+}
+
+#my-dates {
+    margin-top: 30px;
+}
+
+#name-patient {
+    color: deepskyblue;
+}
+
+/*-------------------------------------------- Mis Citas --------------------------------------------------*/
+#info-my-dates {
+    overflow-y: scroll;
+    height: 30em;
+}
+
+#info-my-dates a {
+    display: block;
+    text-decoration: none;
+    color: #3f3f3f;
+    background-color: rgb(130, 224, 255, 0.5);
+    margin: 5px 15px 5px 15px;
+    padding: 8px 0 8px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+/*-------------------------------------------- Scroll Bar--------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+    -webkit-box-shadow: 5px 5px 8px 0px rgba(99, 99, 99, 0.66);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(130, 224, 255, 0.5);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(228, 228, 228);
+}
+
+
+/*-------------------------------------------- Modal Date--------------------------------------------------*/
+
+.chooseDate {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.dataTotalDate {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.modal-header {
+    background-color: deepskyblue;
+    color: white;
+}
+
+
+.dataOfDate {
+    text-transform: lowercase;
+}
+
+.nameOfPaitent {
+    text-align: center;
+    font-weight: 900;
+}
+
+.contentDataDate {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.deleteDate {
+    background-color: rgb(177, 35, 35);
+    border-color: rgb(177, 35, 35);
+}
+
+.btnSize {
+    width: 20%;
+}
+
+/*-----------------------------------------Responsive-------------------------------------------------*/
+
+@media (max-width: 884px) {
+    #background-container {
+		margin-top: 1em;
+	}
+}
+
+
+@media (max-width: 280px) {
+    .modal-dialog {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media(max-width:420px) {
+	h4 {
+		font-size: 20px;
+	}
+}
+
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media(max-height:844px) {
+	.mt-6 {
+		margin-top: 7rem;
+	}
+}
+
+@media(max-width:1024px) {
+
+	.responsive-col {
+		flex-direction: column-reverse;
+	}
+
+	.responsiveIcons {
+		width: 100% !important;
+		justify-content: end !important;
+
+	}
+
+	.responsiveText {
+		width: 100% !important;
+	}
+}
+
+
+
